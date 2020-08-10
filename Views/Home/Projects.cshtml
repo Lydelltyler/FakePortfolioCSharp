@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Projects</title>
+        @* // In this context '~' refers to the wwwroot folder *@
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body>
+    @* NAVBAR *@
+    <div class="navbar">
+        <a href="/">Home</a>
+        <p class="mid" >Projects</p>
+        <a href="/contact">Contact</a>
+    </div>
+    <h1>Here are some projects of mine!</h1>
+
+    <div class="content_project">
+@{
+    for(int i = 0; i < 5; i++) {
+        <div class="content_area">
+            <img class="bam" src="~/img/bam.PNG" alt="God">
+            <div>
+                <h4>Cool thing!</h4>
+                <p>Hey, whatcha watching? Check it out, y'all. Everyone who was invited is here. Alright, let's mafia things up a bit. Joey, burn down the ship. Clamps, burn down the crew. Good news, everyone! I've taught the toaster to feel love!</p>
+            </div>
+        </div>
+    }
+
+
+}
+        
+
+    </div>
+
+    </body>
+</html>
